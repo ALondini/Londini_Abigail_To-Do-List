@@ -60,7 +60,8 @@ ul {
 }
 
 ul li {
-    padding: 6px 8px;
+    padding: 10px 10px;
+    /* top/bottom left/right  TRBL*/
 }
 
 .to-read li:nth-child(odd) {
@@ -74,10 +75,6 @@ ul li {
 .read li:nth-child(odd) {
     background-color: rgba(0, 255, 152, 0.2);
 }
-
-/* main span {
-    text-decoration: bold;
-} */
 
 #happy-icon::after {
     content: "😃";
@@ -108,21 +105,25 @@ ul li {
 
 .title {
     font-weight: bold;
+    font-style: italic;
 }
 
-input[type="checkbox"]+span::after {
-    content: "";
-    margin-left: 20px;
+#reading,
+input[type="checkbox"]:checked+span::after {
+    content: "😊";
+    margin-left: 10px;
 }
+
+#read,
+input[type="checkbox"]:checked+span::after {
+    content: "😄";
+    margin-left: 10px;
+}
+
+
 
 /* input[type="checkbox"]+span::after {
     content: "⭐";
-    margin-left: 20px;
-    font-size: 25px;
-} */
-
-/* input[type="checkbox"]:checked+span::after {
-    content: "😊";
     margin-left: 20px;
     font-size: 25px;
 } */
