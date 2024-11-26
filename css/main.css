@@ -108,14 +108,12 @@ ul li {
     font-style: italic;
 }
 
-#reading,
-input[type="checkbox"]:checked+span::after {
+#reading input[type="checkbox"]:checked+span::after {
     content: "😊";
     margin-left: 10px;
 }
 
-#read,
-input[type="checkbox"]:checked+span::after {
+#read input[type="checkbox"]:checked+span::after {
     content: "😄";
     margin-left: 10px;
 }
