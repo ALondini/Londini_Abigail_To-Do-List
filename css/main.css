@@ -101,7 +101,24 @@ ul li {
     margin-left: 10px;
 }
 
-.closed-book::after {
+.closed-book-icon::after {
     content: "📗";
     margin-left: 10px;
 }
+
+input[type="checkbox"]+span::after {
+    content: "";
+    margin-left: 20px;
+}
+
+/* input[type="checkbox"]+span::after {
+    content: "⭐";
+    margin-left: 20px;
+    font-size: 25px;
+} */
+
+/* input[type="checkbox"]:checked+span::after {
+    content: "😊";
+    margin-left: 20px;
+    font-size: 25px;
+} */
