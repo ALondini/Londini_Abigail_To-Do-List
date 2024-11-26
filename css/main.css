@@ -1,5 +1,6 @@
 body {
     background-color: rgb(255, 255, 142);
+    color: rgb(33, 3, 123);
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     padding: 0;
@@ -108,20 +109,42 @@ ul li {
     font-style: italic;
 }
 
+
+
+#reading input[type="checkbox"]+span {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#reading input[type="checkbox"]:checked+span {
+    text-decoration: line-through;
+    color: rgb(118, 118, 118);
+    position: relative;
+}
+
 #reading input[type="checkbox"]:checked+span::after {
-    content: "😊";
+    text-decoration: none;
+    content: "🤩";
     margin-left: 10px;
+    position: absolute;
+    left: 100%;
+}
+
+
+
+#read input[type="checkbox"]+span {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#read input[type="checkbox"]:checked+span {
+    text-decoration: line-through;
+    color: rgb(181, 148, 16);
+    position: relative;
 }
 
 #read input[type="checkbox"]:checked+span::after {
-    content: "😄";
+    text-decoration: none;
+    content: "🥳";
     margin-left: 10px;
+    position: absolute;
+    left: 100%;
 }
-
-
-
-/* input[type="checkbox"]+span::after {
-    content: "⭐";
-    margin-left: 20px;
-    font-size: 25px;
-} */
